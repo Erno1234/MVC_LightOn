@@ -18,7 +18,12 @@ class Model {
 
   allapotListaFeltolt() {
     for (let index = 0; index < this.#jatekmeret; index++) {
-      this.#allapotLista[index] = true;
+        if (Math.random() < 0.2) {
+            this.#allapotLista[index] = true;
+        } else {
+            this.#allapotLista[index] = false;
+        }
+     
     }
   }
 }
